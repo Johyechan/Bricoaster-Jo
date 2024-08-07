@@ -7,7 +7,7 @@ using UnityEngine;
 // 세 번째 - y축은 밑 판의 y축과 동일하게 하면된다
 // 가설 1 - 그럼 x축과 z축을 구하고 그 구한 값이 0.5의 배수 중에서 가장 근접한 위치로 움직이게 하면 되지 않을까? 된건가?
 
-public class Block : MonoBehaviour, ISnapping, IPositionCalculator
+public class Block : MonoBehaviour, ISnappingable, IPositionCalculator
 {
     public Vector3 PositionCalculator(Vector3 positionToChange)
     {

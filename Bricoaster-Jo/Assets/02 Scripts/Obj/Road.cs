@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Road : MonoBehaviour, ISnapping
+public class Road : MonoBehaviour, ISnappingable
 {
     public void Snapping(Collider otherCollider)
     {

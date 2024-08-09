@@ -2,61 +2,98 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CameraMovement : MonoBehaviour, IMovable
+public class CameraMovement : MonoBehaviour
 {
-    public float MoveSpeed { get; set; }
-    public float TurnSpeed { get; set; }
+    [SerializeField] private float _moveSpeed;
 
-    void Start()
+    [SerializeField] private float _turnSpeed;
+
+    private Camera mainCam;
+
+    private bool _isMoving;
+
+    private void Start()
     {
-        
+        mainCam = Camera.main;
+        _isMoving = true;
     }
 
-    void Update()
+    private void Update()
     {
-        if(Input.GetKey(KeyCode.W))
+        MoveOrTurn();
+    }
+
+    // Camera를 움직일 건지 아닌지 판단하는 bool값을 변경시키는 함수
+    private void ChangeBool()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            GoForward();
+            Debug.Log(_isMoving);
+            _isMoving = ProjectManager.Instance.ChangeBool(_isMoving);
+            Debug.Log(_isMoving);
         }
-        
-        if(Input.GetKey(KeyCode.S))
+    }
+
+    // 카메라를 움직일 건지 회전 시킬건지 선택하여 실행하게 하는 함수
+    private void MoveOrTurn()
+    {
+        ChangeBool();
+
+        if(_isMoving)
         {
-            GoBack();
+            Move();
+        }
+        else
+        {
+            Turn();
+        }
+    }
+
+    // Camera가 움직이는 함수
+    private void Move()
+    {
+        if (Input.GetKey(KeyCode.W))
+        {
+            mainCam.transform.position += Vector3.forward * _moveSpeed;
         }
 
-        if(Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.S))
         {
-            GoLeft();
+            mainCam.transform.position += Vector3.back * _moveSpeed;
+        }
+
+        if (Input.GetKey(KeyCode.A))
+        {
+            mainCam.transform.position += Vector3.left * _moveSpeed;
         }
 
         if (Input.GetKey(KeyCode.D))
         {
-            GoRight();
+            mainCam.transform.position += Vector3.right * _moveSpeed;
         }
     }
 
-    public void GoBack()
+    // Camera가 회전하는 코드
+    private void Turn()
     {
-        // 뒤로 가는 코드
-    }
+        if (Input.GetKey(KeyCode.W))
+        {
+            mainCam.transform.Rotate(Vector3.up * _turnSpeed);
+        }
 
-    public void GoForward()
-    {
-        // 앞으로 가는 코드
-    }
+        if (Input.GetKey(KeyCode.S))
+        {
+            mainCam.transform.Rotate(Vector3.down * _turnSpeed);
+        }
 
-    public void GoLeft()
-    {
-        // 왼쪽으로 가는 코드
-    }
+        if (Input.GetKey(KeyCode.A))
+        {
+            mainCam.transform.Rotate(Vector3.left * _turnSpeed);
+        }
 
-    public void GoRight()
-    {
-        // 오른쪽으로 가는 코드
-    }
-
-    public void Turn()
-    {
-        // 회전하는 코드
+        if (Input.GetKey(KeyCode.D))
+        {
+            mainCam.transform.Rotate(Vector3.right * _turnSpeed);
+        }
     }
 }

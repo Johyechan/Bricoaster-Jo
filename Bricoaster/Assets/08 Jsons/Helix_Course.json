@@ -1,0 +1,1444 @@
+{
+    "trackData": [
+        {
+            "name": "Lego_2x4",
+            "position": {
+                "x": -9.0,
+                "y": 0.0,
+                "z": -7.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
+            },
+            "isPlaced": true,
+            "isReversed": false,
+            "connectedStartJointIdx": -1,
+            "connectedEndJointIdx": -1,
+            "connectType": 0
+        },
+        {
+            "name": "Lego_2x4",
+            "position": {
+                "x": -9.0,
+                "y": 0.6000000238418579,
+                "z": -7.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
+            },
+            "isPlaced": true,
+            "isReversed": false,
+            "connectedStartJointIdx": -1,
+            "connectedEndJointIdx": -1,
+            "connectType": 0
+        },
+        {
+            "name": "Joint_Bottom",
+            "position": {
+                "x": -9.0,
+                "y": 1.2000000476837159,
+                "z": -7.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "color": {
+                "r": 1.0,
+                "g": 0.983390212059021,
+                "b": 0.9764150977134705,
+                "a": 1.0
+            },
+            "isPlaced": true,
+            "isReversed": false,
+            "connectedStartJointIdx": -1,
+            "connectedEndJointIdx": -1,
+            "connectType": 0
+        },
+        {
+            "name": "Joint_Top",
+            "position": {
+                "x": -9.0,
+                "y": 2.0,
+                "z": -7.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "color": {
+                "r": 1.0,
+                "g": 0.983390212059021,
+                "b": 0.9764150977134705,
+                "a": 1.0
+            },
+            "isPlaced": true,
+            "isReversed": false,
+            "connectedStartJointIdx": -1,
+            "connectedEndJointIdx": -1,
+            "connectType": 0
+        },
+        {
+            "name": "Lego_2x4",
+            "position": {
+                "x": -9.0,
+                "y": 3.0,
+                "z": -7.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
+            },
+            "isPlaced": true,
+            "isReversed": false,
+            "connectedStartJointIdx": -1,
+            "connectedEndJointIdx": -1,
+            "connectType": 0
+        },
+        {
+            "name": "Joint_Bottom",
+            "position": {
+                "x": -9.0,
+                "y": 3.6000003814697267,
+                "z": -7.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "color": {
+                "r": 1.0,
+                "g": 0.983390212059021,
+                "b": 0.9764150977134705,
+                "a": 1.0
+            },
+            "isPlaced": true,
+            "isReversed": false,
+            "connectedStartJointIdx": -1,
+            "connectedEndJointIdx": -1,
+            "connectType": 0
+        },
+        {
+            "name": "Joint_Top",
+            "position": {
+                "x": -9.0,
+                "y": 4.40000057220459,
+                "z": -7.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "color": {
+                "r": 1.0,
+                "g": 0.983390212059021,
+                "b": 0.9764150977134705,
+                "a": 1.0
+            },
+            "isPlaced": true,
+            "isReversed": false,
+            "connectedStartJointIdx": -1,
+            "connectedEndJointIdx": -1,
+            "connectType": 0
+        },
+        {
+            "name": "Lego_2x4",
+            "position": {
+                "x": -9.0,
+                "y": 5.40000057220459,
+                "z": -7.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
+            },
+            "isPlaced": true,
+            "isReversed": false,
+            "connectedStartJointIdx": -1,
+            "connectedEndJointIdx": -1,
+            "connectType": 0
+        },
+        {
+            "name": "Joint_Bottom",
+            "position": {
+                "x": -9.0,
+                "y": 6.0,
+                "z": -7.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "color": {
+                "r": 1.0,
+                "g": 0.983390212059021,
+                "b": 0.9764150977134705,
+                "a": 1.0
+            },
+            "isPlaced": true,
+            "isReversed": false,
+            "connectedStartJointIdx": -1,
+            "connectedEndJointIdx": -1,
+            "connectType": 0
+        },
+        {
+            "name": "Joint_Top",
+            "position": {
+                "x": -9.0,
+                "y": 6.800002098083496,
+                "z": -7.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "color": {
+                "r": 1.0,
+                "g": 0.983390212059021,
+                "b": 0.9764150977134705,
+                "a": 1.0
+            },
+            "isPlaced": true,
+            "isReversed": false,
+            "connectedStartJointIdx": -1,
+            "connectedEndJointIdx": -1,
+            "connectType": 0
+        },
+        {
+            "name": "Lego_2x4",
+            "position": {
+                "x": -9.0,
+                "y": 7.800002098083496,
+                "z": -7.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
+            },
+            "isPlaced": true,
+            "isReversed": false,
+            "connectedStartJointIdx": -1,
+            "connectedEndJointIdx": -1,
+            "connectType": 0
+        },
+        {
+            "name": "Joint_Bottom",
+            "position": {
+                "x": -9.0,
+                "y": 8.400002479553223,
+                "z": -7.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "color": {
+                "r": 1.0,
+                "g": 0.983390212059021,
+                "b": 0.9764150977134705,
+                "a": 1.0
+            },
+            "isPlaced": true,
+            "isReversed": false,
+            "connectedStartJointIdx": -1,
+            "connectedEndJointIdx": -1,
+            "connectType": 0
+        },
+        {
+            "name": "Curve_Tilted_Left",
+            "position": {
+                "x": -6.5,
+                "y": 9.00000286102295,
+                "z": -4.5
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 90.0,
+                "z": 0.0
+            },
+            "color": {
+                "r": 0.7764706611633301,
+                "g": 0.658823549747467,
+                "b": 0.34117648005485537,
+                "a": 1.0
+            },
+            "isPlaced": true,
+            "isReversed": true,
+            "connectedStartJointIdx": -1,
+            "connectedEndJointIdx": -1,
+            "connectType": 0
+        },
+        {
+            "name": "Lego_2x4",
+            "position": {
+                "x": -11.5,
+                "y": 0.0,
+                "z": -9.5
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 90.0,
+                "z": 0.0
+            },
+            "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
+            },
+            "isPlaced": true,
+            "isReversed": false,
+            "connectedStartJointIdx": -1,
+            "connectedEndJointIdx": -1,
+            "connectType": 0
+        },
+        {
+            "name": "Joint_Bottom",
+            "position": {
+                "x": -11.5,
+                "y": 0.6000000238418579,
+                "z": -9.5
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 90.0,
+                "z": 0.0
+            },
+            "color": {
+                "r": 1.0,
+                "g": 0.983390212059021,
+                "b": 0.9764150977134705,
+                "a": 1.0
+            },
+            "isPlaced": true,
+            "isReversed": false,
+            "connectedStartJointIdx": -1,
+            "connectedEndJointIdx": -1,
+            "connectType": 0
+        },
+        {
+            "name": "Joint_Top",
+            "position": {
+                "x": -11.5,
+                "y": 1.4000000953674317,
+                "z": -9.5
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 90.0,
+                "z": 0.0
+            },
+            "color": {
+                "r": 1.0,
+                "g": 0.983390212059021,
+                "b": 0.9764150977134705,
+                "a": 1.0
+            },
+            "isPlaced": true,
+            "isReversed": false,
+            "connectedStartJointIdx": -1,
+            "connectedEndJointIdx": -1,
+            "connectType": 0
+        },
+        {
+            "name": "Lego_2x4",
+            "position": {
+                "x": -11.5,
+                "y": 2.4000003337860109,
+                "z": -9.5
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 90.0,
+                "z": 0.0
+            },
+            "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
+            },
+            "isPlaced": true,
+            "isReversed": false,
+            "connectedStartJointIdx": -1,
+            "connectedEndJointIdx": -1,
+            "connectType": 0
+        },
+        {
+            "name": "Joint_Bottom",
+            "position": {
+                "x": -11.5,
+                "y": 3.0,
+                "z": -9.5
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 90.0,
+                "z": 0.0
+            },
+            "color": {
+                "r": 1.0,
+                "g": 0.983390212059021,
+                "b": 0.9764150977134705,
+                "a": 1.0
+            },
+            "isPlaced": true,
+            "isReversed": false,
+            "connectedStartJointIdx": -1,
+            "connectedEndJointIdx": -1,
+            "connectType": 0
+        },
+        {
+            "name": "Joint_Top",
+            "position": {
+                "x": -11.5,
+                "y": 3.8000006675720217,
+                "z": -9.5
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 90.0,
+                "z": 0.0
+            },
+            "color": {
+                "r": 1.0,
+                "g": 0.983390212059021,
+                "b": 0.9764150977134705,
+                "a": 1.0
+            },
+            "isPlaced": true,
+            "isReversed": false,
+            "connectedStartJointIdx": -1,
+            "connectedEndJointIdx": -1,
+            "connectType": 0
+        },
+        {
+            "name": "Lego_2x4",
+            "position": {
+                "x": -11.5,
+                "y": 4.8000006675720219,
+                "z": -9.5
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 90.0,
+                "z": 0.0
+            },
+            "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
+            },
+            "isPlaced": true,
+            "isReversed": false,
+            "connectedStartJointIdx": -1,
+            "connectedEndJointIdx": -1,
+            "connectType": 0
+        },
+        {
+            "name": "Joint_Bottom",
+            "position": {
+                "x": -11.5,
+                "y": 5.400000095367432,
+                "z": -9.5
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 90.0,
+                "z": 0.0
+            },
+            "color": {
+                "r": 1.0,
+                "g": 0.983390212059021,
+                "b": 0.9764150977134705,
+                "a": 1.0
+            },
+            "isPlaced": true,
+            "isReversed": false,
+            "connectedStartJointIdx": -1,
+            "connectedEndJointIdx": -1,
+            "connectType": 0
+        },
+        {
+            "name": "Joint_Top",
+            "position": {
+                "x": -11.5,
+                "y": 6.200000286102295,
+                "z": -9.5
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 90.0,
+                "z": 0.0
+            },
+            "color": {
+                "r": 1.0,
+                "g": 0.983390212059021,
+                "b": 0.9764150977134705,
+                "a": 1.0
+            },
+            "isPlaced": true,
+            "isReversed": false,
+            "connectedStartJointIdx": -1,
+            "connectedEndJointIdx": -1,
+            "connectType": 0
+        },
+        {
+            "name": "Lego_2x4",
+            "position": {
+                "x": -11.5,
+                "y": 7.200002193450928,
+                "z": -9.5
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 90.0,
+                "z": 0.0
+            },
+            "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
+            },
+            "isPlaced": true,
+            "isReversed": false,
+            "connectedStartJointIdx": -1,
+            "connectedEndJointIdx": -1,
+            "connectType": 0
+        },
+        {
+            "name": "Joint_Bottom",
+            "position": {
+                "x": -11.5,
+                "y": 7.800002574920654,
+                "z": -9.5
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 90.0,
+                "z": 0.0
+            },
+            "color": {
+                "r": 1.0,
+                "g": 0.983390212059021,
+                "b": 0.9764150977134705,
+                "a": 1.0
+            },
+            "isPlaced": true,
+            "isReversed": false,
+            "connectedStartJointIdx": -1,
+            "connectedEndJointIdx": -1,
+            "connectType": 0
+        },
+        {
+            "name": "Curve_Tilted_Right",
+            "position": {
+                "x": -9.0,
+                "y": 8.400002479553223,
+                "z": -7.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "color": {
+                "r": 0.7764706611633301,
+                "g": 0.658823549747467,
+                "b": 0.34117648005485537,
+                "a": 1.0
+            },
+            "isPlaced": true,
+            "isReversed": false,
+            "connectedStartJointIdx": -1,
+            "connectedEndJointIdx": -1,
+            "connectType": 0
+        },
+        {
+            "name": "Joint_Bottom",
+            "position": {
+                "x": -14.0,
+                "y": 0.0,
+                "z": -7.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "color": {
+                "r": 1.0,
+                "g": 0.983390212059021,
+                "b": 0.9764150977134705,
+                "a": 1.0
+            },
+            "isPlaced": true,
+            "isReversed": false,
+            "connectedStartJointIdx": -1,
+            "connectedEndJointIdx": -1,
+            "connectType": 0
+        },
+        {
+            "name": "Joint_Top",
+            "position": {
+                "x": -14.0,
+                "y": 0.800000011920929,
+                "z": -7.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "color": {
+                "r": 1.0,
+                "g": 0.983390212059021,
+                "b": 0.9764150977134705,
+                "a": 1.0
+            },
+            "isPlaced": true,
+            "isReversed": false,
+            "connectedStartJointIdx": -1,
+            "connectedEndJointIdx": -1,
+            "connectType": 0
+        },
+        {
+            "name": "Lego_2x4",
+            "position": {
+                "x": -14.0,
+                "y": 1.7999999523162842,
+                "z": -7.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
+            },
+            "isPlaced": true,
+            "isReversed": false,
+            "connectedStartJointIdx": -1,
+            "connectedEndJointIdx": -1,
+            "connectType": 0
+        },
+        {
+            "name": "Joint_Bottom",
+            "position": {
+                "x": -14.0,
+                "y": 2.4000000953674318,
+                "z": -7.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "color": {
+                "r": 1.0,
+                "g": 0.983390212059021,
+                "b": 0.9764150977134705,
+                "a": 1.0
+            },
+            "isPlaced": true,
+            "isReversed": false,
+            "connectedStartJointIdx": -1,
+            "connectedEndJointIdx": -1,
+            "connectType": 0
+        },
+        {
+            "name": "Joint_Top",
+            "position": {
+                "x": -14.0,
+                "y": 3.200000286102295,
+                "z": -7.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "color": {
+                "r": 1.0,
+                "g": 0.983390212059021,
+                "b": 0.9764150977134705,
+                "a": 1.0
+            },
+            "isPlaced": true,
+            "isReversed": false,
+            "connectedStartJointIdx": -1,
+            "connectedEndJointIdx": -1,
+            "connectType": 0
+        },
+        {
+            "name": "Lego_2x4",
+            "position": {
+                "x": -14.0,
+                "y": 4.199999809265137,
+                "z": -7.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
+            },
+            "isPlaced": true,
+            "isReversed": false,
+            "connectedStartJointIdx": -1,
+            "connectedEndJointIdx": -1,
+            "connectType": 0
+        },
+        {
+            "name": "Joint_Bottom",
+            "position": {
+                "x": -14.0,
+                "y": 4.800000190734863,
+                "z": -7.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "color": {
+                "r": 1.0,
+                "g": 0.983390212059021,
+                "b": 0.9764150977134705,
+                "a": 1.0
+            },
+            "isPlaced": true,
+            "isReversed": false,
+            "connectedStartJointIdx": -1,
+            "connectedEndJointIdx": -1,
+            "connectType": 0
+        },
+        {
+            "name": "Joint_Top",
+            "position": {
+                "x": -14.0,
+                "y": 5.600000381469727,
+                "z": -7.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "color": {
+                "r": 1.0,
+                "g": 0.983390212059021,
+                "b": 0.9764150977134705,
+                "a": 1.0
+            },
+            "isPlaced": true,
+            "isReversed": false,
+            "connectedStartJointIdx": -1,
+            "connectedEndJointIdx": -1,
+            "connectType": 0
+        },
+        {
+            "name": "Lego_2x4",
+            "position": {
+                "x": -14.0,
+                "y": 6.600001335144043,
+                "z": -7.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
+            },
+            "isPlaced": true,
+            "isReversed": false,
+            "connectedStartJointIdx": -1,
+            "connectedEndJointIdx": -1,
+            "connectType": 0
+        },
+        {
+            "name": "Joint_Bottom",
+            "position": {
+                "x": -14.0,
+                "y": 7.2000017166137699,
+                "z": -7.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "color": {
+                "r": 1.0,
+                "g": 0.983390212059021,
+                "b": 0.9764150977134705,
+                "a": 1.0
+            },
+            "isPlaced": true,
+            "isReversed": false,
+            "connectedStartJointIdx": -1,
+            "connectedEndJointIdx": -1,
+            "connectType": 0
+        },
+        {
+            "name": "Curve_Tilted_Right",
+            "position": {
+                "x": -11.5,
+                "y": 7.800002574920654,
+                "z": -9.5
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 90.0,
+                "z": 0.0
+            },
+            "color": {
+                "r": 0.7764706611633301,
+                "g": 0.658823549747467,
+                "b": 0.34117648005485537,
+                "a": 1.0
+            },
+            "isPlaced": true,
+            "isReversed": false,
+            "connectedStartJointIdx": -1,
+            "connectedEndJointIdx": -1,
+            "connectType": 0
+        },
+        {
+            "name": "Joint_Bottom",
+            "position": {
+                "x": -11.5,
+                "y": 0.0,
+                "z": -4.5
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 90.0,
+                "z": 0.0
+            },
+            "color": {
+                "r": 1.0,
+                "g": 0.983390212059021,
+                "b": 0.9764150977134705,
+                "a": 1.0
+            },
+            "isPlaced": true,
+            "isReversed": false,
+            "connectedStartJointIdx": -1,
+            "connectedEndJointIdx": -1,
+            "connectType": 0
+        },
+        {
+            "name": "Joint_Top",
+            "position": {
+                "x": -11.5,
+                "y": 0.8000000715255737,
+                "z": -4.5
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 90.0,
+                "z": 0.0
+            },
+            "color": {
+                "r": 1.0,
+                "g": 0.983390212059021,
+                "b": 0.9764150977134705,
+                "a": 1.0
+            },
+            "isPlaced": true,
+            "isReversed": false,
+            "connectedStartJointIdx": -1,
+            "connectedEndJointIdx": -1,
+            "connectType": 0
+        },
+        {
+            "name": "Joint_Bottom",
+            "position": {
+                "x": -11.5,
+                "y": 1.8000000715255738,
+                "z": -4.5
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 90.0,
+                "z": 0.0
+            },
+            "color": {
+                "r": 1.0,
+                "g": 0.983390212059021,
+                "b": 0.9764150977134705,
+                "a": 1.0
+            },
+            "isPlaced": true,
+            "isReversed": false,
+            "connectedStartJointIdx": -1,
+            "connectedEndJointIdx": -1,
+            "connectType": 0
+        },
+        {
+            "name": "Joint_Top",
+            "position": {
+                "x": -11.5,
+                "y": 2.6000001430511476,
+                "z": -4.5
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 90.0,
+                "z": 0.0
+            },
+            "color": {
+                "r": 1.0,
+                "g": 0.983390212059021,
+                "b": 0.9764150977134705,
+                "a": 1.0
+            },
+            "isPlaced": true,
+            "isReversed": false,
+            "connectedStartJointIdx": -1,
+            "connectedEndJointIdx": -1,
+            "connectType": 0
+        },
+        {
+            "name": "Lego_2x4",
+            "position": {
+                "x": -11.5,
+                "y": 3.6000003814697267,
+                "z": -4.5
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 90.0,
+                "z": 0.0
+            },
+            "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
+            },
+            "isPlaced": true,
+            "isReversed": false,
+            "connectedStartJointIdx": -1,
+            "connectedEndJointIdx": -1,
+            "connectType": 0
+        },
+        {
+            "name": "Joint_Bottom",
+            "position": {
+                "x": -11.5,
+                "y": 4.200000286102295,
+                "z": -4.5
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 90.0,
+                "z": 0.0
+            },
+            "color": {
+                "r": 1.0,
+                "g": 0.983390212059021,
+                "b": 0.9764150977134705,
+                "a": 1.0
+            },
+            "isPlaced": true,
+            "isReversed": false,
+            "connectedStartJointIdx": -1,
+            "connectedEndJointIdx": -1,
+            "connectType": 0
+        },
+        {
+            "name": "Joint_Top",
+            "position": {
+                "x": -11.5,
+                "y": 5.0,
+                "z": -4.5
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 90.0,
+                "z": 0.0
+            },
+            "color": {
+                "r": 1.0,
+                "g": 0.983390212059021,
+                "b": 0.9764150977134705,
+                "a": 1.0
+            },
+            "isPlaced": true,
+            "isReversed": false,
+            "connectedStartJointIdx": -1,
+            "connectedEndJointIdx": -1,
+            "connectType": 0
+        },
+        {
+            "name": "Lego_2x4",
+            "position": {
+                "x": -11.5,
+                "y": 6.000001430511475,
+                "z": -4.5
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 90.0,
+                "z": 0.0
+            },
+            "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
+            },
+            "isPlaced": true,
+            "isReversed": false,
+            "connectedStartJointIdx": -1,
+            "connectedEndJointIdx": -1,
+            "connectType": 0
+        },
+        {
+            "name": "Joint_Bottom",
+            "position": {
+                "x": -11.5,
+                "y": 6.600001811981201,
+                "z": -4.5
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 90.0,
+                "z": 0.0
+            },
+            "color": {
+                "r": 1.0,
+                "g": 0.983390212059021,
+                "b": 0.9764150977134705,
+                "a": 1.0
+            },
+            "isPlaced": true,
+            "isReversed": false,
+            "connectedStartJointIdx": -1,
+            "connectedEndJointIdx": -1,
+            "connectType": 0
+        },
+        {
+            "name": "Curve_Tilted_Right",
+            "position": {
+                "x": -14.0,
+                "y": 7.2000017166137699,
+                "z": -7.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 180.0,
+                "z": 0.0
+            },
+            "color": {
+                "r": 0.7764706611633301,
+                "g": 0.658823549747467,
+                "b": 0.34117648005485537,
+                "a": 1.0
+            },
+            "isPlaced": true,
+            "isReversed": false,
+            "connectedStartJointIdx": -1,
+            "connectedEndJointIdx": -1,
+            "connectType": 0
+        },
+        {
+            "name": "Curve_Tilted_Right",
+            "position": {
+                "x": -11.5,
+                "y": 6.600001811981201,
+                "z": -4.5
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 270.0,
+                "z": 0.0
+            },
+            "color": {
+                "r": 0.7764706611633301,
+                "g": 0.658823549747467,
+                "b": 0.34117648005485537,
+                "a": 1.0
+            },
+            "isPlaced": true,
+            "isReversed": false,
+            "connectedStartJointIdx": -1,
+            "connectedEndJointIdx": 10,
+            "connectType": 0
+        },
+        {
+            "name": "Curve_Tilted_Right",
+            "position": {
+                "x": -9.0,
+                "y": 6.0,
+                "z": -7.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "color": {
+                "r": 0.7764706611633301,
+                "g": 0.658823549747467,
+                "b": 0.34117648005485537,
+                "a": 1.0
+            },
+            "isPlaced": true,
+            "isReversed": false,
+            "connectedStartJointIdx": 10,
+            "connectedEndJointIdx": 22,
+            "connectType": 0
+        },
+        {
+            "name": "Curve_Tilted_Right",
+            "position": {
+                "x": -11.5,
+                "y": 5.400000095367432,
+                "z": -9.5
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 90.0,
+                "z": 0.0
+            },
+            "color": {
+                "r": 0.7764706611633301,
+                "g": 0.658823549747467,
+                "b": 0.34117648005485537,
+                "a": 1.0
+            },
+            "isPlaced": true,
+            "isReversed": false,
+            "connectedStartJointIdx": 22,
+            "connectedEndJointIdx": 33,
+            "connectType": 0
+        },
+        {
+            "name": "Curve_Tilted_Right",
+            "position": {
+                "x": -14.0,
+                "y": 4.800000190734863,
+                "z": -7.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 180.0,
+                "z": 0.0
+            },
+            "color": {
+                "r": 0.7764706611633301,
+                "g": 0.658823549747467,
+                "b": 0.34117648005485537,
+                "a": 1.0
+            },
+            "isPlaced": true,
+            "isReversed": false,
+            "connectedStartJointIdx": 33,
+            "connectedEndJointIdx": 43,
+            "connectType": 0
+        },
+        {
+            "name": "Curve_Tilted_Right",
+            "position": {
+                "x": -11.5,
+                "y": 4.200000286102295,
+                "z": -4.5
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 270.0,
+                "z": 0.0
+            },
+            "color": {
+                "r": 0.7764706611633301,
+                "g": 0.658823549747467,
+                "b": 0.34117648005485537,
+                "a": 1.0
+            },
+            "isPlaced": true,
+            "isReversed": false,
+            "connectedStartJointIdx": 43,
+            "connectedEndJointIdx": 7,
+            "connectType": 0
+        },
+        {
+            "name": "Curve_Tilted_Right",
+            "position": {
+                "x": -9.0,
+                "y": 3.6000003814697267,
+                "z": -7.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "color": {
+                "r": 0.7764706611633301,
+                "g": 0.658823549747467,
+                "b": 0.34117648005485537,
+                "a": 1.0
+            },
+            "isPlaced": true,
+            "isReversed": false,
+            "connectedStartJointIdx": 7,
+            "connectedEndJointIdx": 19,
+            "connectType": 0
+        },
+        {
+            "name": "Curve_Tilted_Right",
+            "position": {
+                "x": -11.5,
+                "y": 3.0,
+                "z": -9.5
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 90.0,
+                "z": 0.0
+            },
+            "color": {
+                "r": 0.7764706611633301,
+                "g": 0.658823549747467,
+                "b": 0.34117648005485537,
+                "a": 1.0
+            },
+            "isPlaced": true,
+            "isReversed": false,
+            "connectedStartJointIdx": 19,
+            "connectedEndJointIdx": 30,
+            "connectType": 0
+        },
+        {
+            "name": "Curve_Tilted_Right",
+            "position": {
+                "x": -14.0,
+                "y": 2.4000000953674318,
+                "z": -7.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 180.0,
+                "z": 0.0
+            },
+            "color": {
+                "r": 0.7764706611633301,
+                "g": 0.658823549747467,
+                "b": 0.34117648005485537,
+                "a": 1.0
+            },
+            "isPlaced": true,
+            "isReversed": false,
+            "connectedStartJointIdx": 30,
+            "connectedEndJointIdx": 40,
+            "connectType": 0
+        },
+        {
+            "name": "Curve_Tilted_Right",
+            "position": {
+                "x": -11.5,
+                "y": 1.8000000715255738,
+                "z": -4.5
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 270.0,
+                "z": 0.0
+            },
+            "color": {
+                "r": 0.7764706611633301,
+                "g": 0.658823549747467,
+                "b": 0.34117648005485537,
+                "a": 1.0
+            },
+            "isPlaced": true,
+            "isReversed": false,
+            "connectedStartJointIdx": 40,
+            "connectedEndJointIdx": 4,
+            "connectType": 0
+        },
+        {
+            "name": "Curve_Tilted_Right",
+            "position": {
+                "x": -9.0,
+                "y": 1.2000000476837159,
+                "z": -7.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "color": {
+                "r": 0.7764706611633301,
+                "g": 0.658823549747467,
+                "b": 0.34117648005485537,
+                "a": 1.0
+            },
+            "isPlaced": true,
+            "isReversed": false,
+            "connectedStartJointIdx": 4,
+            "connectedEndJointIdx": 16,
+            "connectType": 0
+        },
+        {
+            "name": "Curve_Tilted_Right",
+            "position": {
+                "x": -11.5,
+                "y": 0.6000000238418579,
+                "z": -9.5
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 90.0,
+                "z": 0.0
+            },
+            "color": {
+                "r": 0.7764706611633301,
+                "g": 0.658823549747467,
+                "b": 0.34117648005485537,
+                "a": 1.0
+            },
+            "isPlaced": true,
+            "isReversed": false,
+            "connectedStartJointIdx": 16,
+            "connectedEndJointIdx": 27,
+            "connectType": 0
+        },
+        {
+            "name": "Curve_Flat",
+            "position": {
+                "x": -14.0,
+                "y": 0.0,
+                "z": -7.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 180.0,
+                "z": 0.0
+            },
+            "color": {
+                "r": 0.7764706611633301,
+                "g": 0.658823549747467,
+                "b": 0.34117648005485537,
+                "a": 1.0
+            },
+            "isPlaced": true,
+            "isReversed": false,
+            "connectedStartJointIdx": 27,
+            "connectedEndJointIdx": 38,
+            "connectType": 0
+        },
+        {
+            "name": "Joint_Bottom",
+            "position": {
+                "x": -6.5,
+                "y": 0.0,
+                "z": -4.5
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 90.0,
+                "z": 0.0
+            },
+            "color": {
+                "r": 1.0,
+                "g": 0.983390212059021,
+                "b": 0.9764150977134705,
+                "a": 1.0
+            },
+            "isPlaced": true,
+            "isReversed": false,
+            "connectedStartJointIdx": -1,
+            "connectedEndJointIdx": -1,
+            "connectType": 0
+        },
+        {
+            "name": "Straight_Flat",
+            "position": {
+                "x": -11.5,
+                "y": 0.0,
+                "z": -4.5
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": -90.0,
+                "z": 0.0
+            },
+            "color": {
+                "r": 0.7764706611633301,
+                "g": 0.658823549747467,
+                "b": 0.34117648005485537,
+                "a": 1.0
+            },
+            "isPlaced": true,
+            "isReversed": false,
+            "connectedStartJointIdx": 37,
+            "connectedEndJointIdx": -1,
+            "connectType": 0
+        }
+    ]
+}

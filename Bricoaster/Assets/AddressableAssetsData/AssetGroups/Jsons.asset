@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Jsons
+  m_EditorClassIdentifier: 
+  m_GroupName: Jsons
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 16fb321ebcf0cf84fb56528f8eba4573
+  m_SerializeEntries:
+  - m_GUID: 142143f40a79b6f4886a742e0cedc9ea
+    m_Address: Assets/08 Jsons/aaa.json
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3be95de7cf7a1ab428ee468c1aacd83f
+    m_Address: Assets/08 Jsons/Door.json
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fd24bcfb198d89c42bad69290bcab30c
+    m_Address: Assets/08 Jsons/Gravity_Track.json
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3f54670fd8478864aba28c61c3661440
+    m_Address: Assets/08 Jsons/Helix_Course.json
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 9cec617537eec25458613e4fd9265f26, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 825e77c0608b7794f963a4816b922bcc, type: 2}
+    - {fileID: 11400000, guid: d14124c43d531614894388275885391a, type: 2}

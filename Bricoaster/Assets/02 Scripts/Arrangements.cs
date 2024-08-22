@@ -4,21 +4,26 @@ using UnityEngine;
 
 public class Arrangements : MonoBehaviour
 {
-    public List<GameObject> Prefabs
+    private void Start()
+    {
+        DontDestroyOnLoad(gameObject);
+    }
+
+    public List<Object> Prefabs
     {
         get
         {
             return _prefabs;
         }
     }
-    private List<GameObject> _prefabs;
+    private List<Object> _prefabs = new List<Object>();
 
-    public List<TextAsset> Jsons
+    public List<Object> Jsons
     {
         get
         {
             return _jsons;
         }
     }
-    private List<TextAsset> _jsons;
+    private List<Object> _jsons = new List<Object>();
 }

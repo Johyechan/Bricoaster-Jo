@@ -18,22 +18,22 @@ MonoBehaviour:
   m_GUID: 16fb321ebcf0cf84fb56528f8eba4573
   m_SerializeEntries:
   - m_GUID: 142143f40a79b6f4886a742e0cedc9ea
-    m_Address: Assets/08 Jsons/aaa.json
+    m_Address: Jsons
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 3be95de7cf7a1ab428ee468c1aacd83f
-    m_Address: Assets/08 Jsons/Door.json
+    m_Address: Jsons
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: fd24bcfb198d89c42bad69290bcab30c
-    m_Address: Assets/08 Jsons/Gravity_Track.json
+    m_Address: Jsons
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 3f54670fd8478864aba28c61c3661440
-    m_Address: Assets/08 Jsons/Helix_Course.json
+    m_Address: Jsons
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

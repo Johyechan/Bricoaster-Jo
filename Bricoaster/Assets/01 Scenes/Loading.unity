@@ -492,6 +492,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a4468a3dac5cf14b83a4b3ff8e80086, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _prefabsGroupName: Prefabs
+  _jsonsGroupName: Jsons
 --- !u!4 &1928874253
 Transform:
   m_ObjectHideFlags: 0

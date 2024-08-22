@@ -24,7 +24,7 @@ public class CreateSprite : MonoBehaviour
         Destroy(renderTexture);
 
         byte[] bytes = texture2D.EncodeToPNG();
-        string fullPath = _savePath + _fileName;
+        string fullPath = _savePath + _fileName + ".png";
         System.IO.File.WriteAllBytes(fullPath, bytes);
 
 #if UNITY_EDITOR

@@ -379,13 +379,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6703116537088572241}
     m_Modifications:
+    - target: {fileID: 1164088753219296933, guid: aa403449947a26640a3810c39a9f75b1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.01
+      objectReference: {fileID: 0}
     - target: {fileID: 2543659394785368740, guid: aa403449947a26640a3810c39a9f75b1, type: 3}
       propertyPath: m_Name
       value: Marble
       objectReference: {fileID: 0}
+    - target: {fileID: 2872872194386833962, guid: aa403449947a26640a3810c39a9f75b1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 3308033885684304583, guid: aa403449947a26640a3810c39a9f75b1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.01
+      objectReference: {fileID: 0}
     - target: {fileID: 9023730927404094331, guid: aa403449947a26640a3810c39a9f75b1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 9023730927404094331, guid: aa403449947a26640a3810c39a9f75b1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -524,7 +536,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9023730927404094331, guid: aa403449947a26640a3810c39a9f75b1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 9023730927404094331, guid: aa403449947a26640a3810c39a9f75b1, type: 3}
       propertyPath: m_LocalPosition.y

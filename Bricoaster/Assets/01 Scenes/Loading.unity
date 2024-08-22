@@ -494,6 +494,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _prefabsGroupName: Prefabs
   _jsonsGroupName: Jsons
+  _texturesGroupName: Textures
 --- !u!4 &1928874253
 Transform:
   m_ObjectHideFlags: 0

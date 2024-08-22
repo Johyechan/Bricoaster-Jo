@@ -26,4 +26,13 @@ public class Arrangements : MonoBehaviour
         }
     }
     private List<Object> _jsons = new List<Object>();
+
+    public List<Object> Textures
+    {
+        get
+        {
+            return _textures;
+        }
+    }
+    private List<Object> _textures = new List<Object>();
 }

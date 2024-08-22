@@ -4,10 +4,12 @@ using UnityEngine;
 using UnityEngine.ResourceManagement.AsyncOperations;
 using UnityEngine.SceneManagement;
 
+// 이제 오브젝트 풀 만들고 버튼 생성해주는 것만 해줘
 public class LoadingManager : MonoBehaviour, ILoad
 {
     [SerializeField] private string _prefabsGroupName;
     [SerializeField] private string _jsonsGroupName;
+    [SerializeField] private string _texturesGroupName;
 
     private ILoad _loadHandle;
     private bool _end;
@@ -28,15 +30,39 @@ public class LoadingManager : MonoBehaviour, ILoad
         {
             _loadHandle.LoadAssets<GameObject>(_prefabsGroupName);
             yield return new WaitUntil(() => _end == true);
+
             _end = false;
             _loadHandle.LoadAssets<TextAsset>(_jsonsGroupName);
         }
         else
         {
             _loadHandle.LoadAssets<GameObject>(_prefabsGroupName);
+            yield return new WaitUntil(() => _end == true);
+
+            _end = false;
+            _loadHandle.LoadAssets<TextAsset>(_jsonsGroupName);
+            yield return new WaitUntil(() => _end == true);
+
+            _end = false;
+            _loadHandle.LoadAssets<Texture2D>(_texturesGroupName);
         }
         yield return new WaitUntil(() => _end == true);
         SceneManager.LoadScene(keep.SceneName);
+    }
+
+    private void OkToAdd(Object value, List<Object> list)
+    {
+        if(list.Count > 0)
+        {
+            if(!list.Contains(value))
+            {
+                list.Add(value);
+            }
+        }
+        else
+        {
+            list.Add(value);
+        }
     }
 
     public void OnLoadCompleted<T>(AsyncOperationHandle<IList<T>> handle) where T : Object
@@ -47,23 +73,15 @@ public class LoadingManager : MonoBehaviour, ILoad
             {
                 if(asset.GetType() == typeof(GameObject))
                 {
-                    if (_arr.Prefabs.Count > 0)
-                    {
-                        if (!_arr.Prefabs.Contains(asset))
-                        {
-                            _arr.Prefabs.Add(asset);
-                        }
-                    }
+                    OkToAdd(asset, _arr.Prefabs);
                 }
                 else if(asset.GetType() == typeof(TextAsset))
                 {
-                    if(_arr.Jsons.Count > 0)
-                    {
-                        if (!_arr.Jsons.Contains(asset))
-                        {
-                            _arr.Jsons.Add(asset);
-                        }
-                    }
+                    OkToAdd(asset, _arr.Jsons);
+                }
+                else if(asset.GetType() == typeof(Texture2D))
+                {
+                    OkToAdd(asset, _arr.Textures);
                 }
             }
 

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CreateSprite : MonoBehaviour
+public class CreateTexture : MonoBehaviour
 {
     [SerializeField] private Camera _captureCam;
     [SerializeField] private string _savePath;

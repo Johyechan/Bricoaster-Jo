@@ -13,7 +13,6 @@ public interface ILoad
 
     private void OnAssetLoaded<T>(T asset) where T : Object
     {
-        // 여길 뭘로 채울것인가
         Debug.Log(asset);
     }
 

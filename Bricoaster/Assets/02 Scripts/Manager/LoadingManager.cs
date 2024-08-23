@@ -14,12 +14,14 @@ public class LoadingManager : MonoBehaviour, ILoad
     private ILoad _loadHandle;
     private bool _end;
     private Arrangements _arr;
+    private PoolFiller _filler;
 
     void Start()
     {
         _loadHandle = GetComponent<ILoad>();
         _end = false;
         _arr = GameObject.Find("Arrangements").GetComponent<Arrangements>();
+        _filler = GetComponent<PoolFiller>();
         StartCoroutine(ChangeScene());
     }
 
@@ -47,6 +49,8 @@ public class LoadingManager : MonoBehaviour, ILoad
             _loadHandle.LoadAssets<Texture2D>(_texturesGroupName);
         }
         yield return new WaitUntil(() => _end == true);
+        _filler.FillObjectPool();
+        yield return new WaitUntil(() => ObjectPool.Instance.End == true);
         SceneManager.LoadScene(keep.SceneName);
     }
 

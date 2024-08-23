@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
+using System.Text.RegularExpressions;
 
 public class ProjectManager : MonoBehaviour
 {
@@ -23,5 +25,27 @@ public class ProjectManager : MonoBehaviour
     public bool ChangeBool(bool value)
     {
         return !value;
+    }
+
+    // 괄호안에 있는 문자는 삭제하는 함수
+    public string NameChange(string str)
+    {
+        return Regex.Replace(str, @"\s?\(.*?\)", "");
+    }
+
+    // 이름을 가지고 enum값과 이름이 같은지 확인하고 그 enum값을 찾는 함수
+    public ObjectPoolType FindType(string name)
+    {
+        bool finded;
+        foreach (ObjectPoolType type in Enum.GetValues(typeof(ObjectPoolType)))
+        {
+            finded = type.ToString().Equals(name, StringComparison.OrdinalIgnoreCase);
+            if (finded)
+            {
+                return type;
+            }
+        }
+
+        return ObjectPoolType.None;
     }
 }

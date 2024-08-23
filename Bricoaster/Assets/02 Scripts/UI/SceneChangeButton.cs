@@ -10,7 +10,7 @@ public class SceneChangeButton : ButtonBase
     public override void IsClicked()
     {
         base.IsClicked();
-        
+
         KeepScene keep = GameObject.Find("KeepScene").GetComponent<KeepScene>();
         keep.SceneName = _sceneName;
 

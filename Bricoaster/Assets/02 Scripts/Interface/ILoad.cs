@@ -13,7 +13,7 @@ public interface ILoad
 
     private void OnAssetLoaded<T>(T asset) where T : Object
     {
-        Debug.Log(asset);
+        //Debug.Log(asset);
     }
 
     public void OnLoadCompleted<T>(AsyncOperationHandle<IList<T>> handle) where T : Object;

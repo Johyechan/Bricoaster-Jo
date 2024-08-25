@@ -56,7 +56,6 @@ public class ButtonFunctionAdder : MonoBehaviour
     {
         GameObject gameObj = ObjectPool.Instance.GetObject(type, _makeTrans);
         yield return new WaitForSeconds(0.2f);
-        gameObj.transform.position = Vector3.zero;
         gameObj.transform.localPosition = Vector3.zero;
         gameObj.transform.rotation = Quaternion.identity;
     }

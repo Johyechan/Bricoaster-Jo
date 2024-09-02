@@ -2,6 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
+
 public class CreateTexture : MonoBehaviour
 {
     [SerializeField] private Camera _captureCam;
@@ -10,6 +14,7 @@ public class CreateTexture : MonoBehaviour
 
     void Start()
     {
+#if UNITY_EDITOR
         RenderTexture renderTexture = new RenderTexture(Screen.width, Screen.height, 24);
         _captureCam.targetTexture = renderTexture;
         _captureCam.Render();
@@ -27,10 +32,10 @@ public class CreateTexture : MonoBehaviour
         string fullPath = _savePath + _fileName + ".png";
         System.IO.File.WriteAllBytes(fullPath, bytes);
 
-#if UNITY_EDITOR
+
         UnityEditor.AssetDatabase.Refresh();
-#endif
 
         Sprite newSprite = UnityEditor.AssetDatabase.LoadAssetAtPath<Sprite>(fullPath);
+#endif
     }
 }

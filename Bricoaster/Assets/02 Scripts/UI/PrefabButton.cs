@@ -11,9 +11,9 @@ public class PrefabButton : MonoBehaviour
 
     private void OnDisable()
     {
-        gameObject.name = "Button";
-        _image.sprite = null;
-        _image.gameObject.SetActive(false);
-        _tmp.text = "";
+        //gameObject.name = "Button";
+        //_image.sprite = null;
+        //_image.gameObject.SetActive(false);
+        //_tmp.text = "";
     }
 }

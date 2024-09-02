@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -33,7 +34,14 @@ public class ButtonLoad : MonoBehaviour
         }
         else
         {
-            // 텍스트 버전
+            foreach(Object value in _arr.Jsons)
+            {
+                GameObject button = ObjectPool.Instance.GetObject(ObjectPoolType.Button, _buttonsPanelTrans);
+                button.name = ProjectManager.Instance.NameChange(value.name);
+                TMP_Text tmp = button.transform.GetChild(1).GetComponent<TMP_Text>();
+                tmp.text = button.name;
+                _adder.AddFunctionToButton(button);
+            }
         }
     }
 

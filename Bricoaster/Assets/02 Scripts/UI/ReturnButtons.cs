@@ -12,7 +12,7 @@ public class ReturnButtons : MonoBehaviour
         {
             GameObject button = _buttons.transform.GetChild(i).gameObject;
             ObjectPoolType type = ProjectManager.Instance.FindType(ProjectManager.Instance.NameChange(button.name));
-            ObjectPool.Instance.ReturnObject(type, button);
+            ObjectPool.Instance.ReturnObject(type, button, true);
         }
     }
 }

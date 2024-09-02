@@ -1,7 +1,9 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ObjectPool : MonoBehaviour
 {
@@ -94,9 +96,18 @@ public class ObjectPool : MonoBehaviour
         }
     }
 
-    public void ReturnObject(ObjectPoolType type, GameObject obj)
+    public void ReturnObject(ObjectPoolType type, GameObject obj, bool isButton = false)
     {
         obj.SetActive(false);
+        if(isButton)
+        {
+            obj.name = "Button";
+            Image image = obj.transform.GetChild(0).GetComponent<Image>();
+            TMP_Text tmp = obj.transform.GetChild(1).GetComponent<TMP_Text>();
+            tmp.text = "";
+            image.sprite = null;
+            obj.transform.GetChild(0).gameObject.SetActive(false);
+        }
         obj.transform.SetParent(this.transform);
         _pool[type].Enqueue(obj);
     }

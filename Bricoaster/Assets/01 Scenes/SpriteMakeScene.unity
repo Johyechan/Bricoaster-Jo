@@ -164,12 +164,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 47298341}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c23eb96cfc5db64295263dc7f1c8976, type: 3}
+  m_Script: {fileID: 11500000, guid: 9996ff2c8b416d64abc5aff85e1bf17c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _captureCam: {fileID: 1863583918}
   _savePath: Assets/07 Sprites/My/
-  _fileName: Straight_Tilted
+  _fileName: test
 --- !u!1 &158614347
 GameObject:
   m_ObjectHideFlags: 0

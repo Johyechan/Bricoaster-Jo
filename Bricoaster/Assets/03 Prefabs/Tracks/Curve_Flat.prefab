@@ -203,7 +203,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4275502695891638009}
   - component: {fileID: 4547028222699276754}
-  - component: {fileID: 5387981770376240189}
   m_Layer: 0
   m_Name: Curve_Flat
   m_TagString: Untagged
@@ -254,18 +253,6 @@ Rigidbody:
   m_Interpolate: 2
   m_Constraints: 0
   m_CollisionDetection: 1
---- !u!114 &5387981770376240189
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3581976862344458124}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1441b0e8ce179c742b2b3a5521f339f5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &4365884097207971237
 GameObject:
   m_ObjectHideFlags: 0

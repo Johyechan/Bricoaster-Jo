@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1820155488672464017}
   m_Layer: 0
   m_Name: lego_plan
-  m_TagString: Untagged
+  m_TagString: Plan
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -65,23 +65,29 @@ public class ButtonFunctionAdder : MonoBehaviour
         }
     }
 
-    // 위치가 이상한거 잡아줘야 하고
-    // 카메라가 중심 위치를 봐야한다
     private IEnumerator MakeTrackCo(JsonBase jsonBase)
     {
+        Vector3 plusPos = ProjectManager.Instance.CalculateCenterPos(jsonBase);
         foreach (TrackData data in jsonBase.trackData)
         {
             GameObject track = ObjectPool.Instance.GetObject(ProjectManager.Instance.FindType(data.name), _makeTrans);
-            yield return new WaitForSeconds(0.2f);
-            track.transform.position = data.position;
-            track.transform.rotation = Quaternion.Euler(data.rotation);
-            ChangeColor(track, data.color);
+            yield return new WaitForSeconds(0.1f);
+            track.transform.position = data.position - plusPos;
+            if (ProjectManager.Instance.NameChange(track.name) == "Lego_2x1" && Mathf.Abs(data.rotation.y) == 90)
+            {
+                track.transform.rotation = Quaternion.Euler(new Vector3(0, -90, 0));
+            }
+            else
+            {
+                track.transform.rotation = Quaternion.Euler(data.rotation);
+            }
+            yield return new WaitUntil(() => ChangeColor(track, data.color));
         }
 
         _isMaking = false;
     }
 
-    private void ChangeColor(GameObject obj, Color color)
+    private bool ChangeColor(GameObject obj, Color color)
     {
         Transform[] children = obj.transform.GetComponentsInChildren<Transform>();
 
@@ -96,9 +102,11 @@ public class ButtonFunctionAdder : MonoBehaviour
             if(renderer != null && renderer.material != null)
             {
                 renderer.material.color = color;
-                break;
+                return true;
             }
         }
+
+        return false;
     }
 
     private void OnPartButtonClick(GameObject obj)
@@ -135,8 +143,33 @@ public class ButtonFunctionAdder : MonoBehaviour
     {
         GameObject gameObj = ObjectPool.Instance.GetObject(type, _makeTrans);
         yield return new WaitForSeconds(0.2f);
-        gameObj.transform.localPosition = Vector3.zero;
+        if(gameObj.tag == "Rail")
+        {
+            ChangePosForPartsSceneOnly(gameObj.transform);
+        }
+        else if(gameObj.tag == "Plan")
+        {
+            gameObj.transform.position = new Vector3(12.5f, 0, 12.5f);
+        }
+        else
+        {
+            gameObj.transform.position = Vector3.zero;
+        }
         gameObj.transform.rotation = Quaternion.identity;
+    }
+
+    private void ChangePosForPartsSceneOnly(Transform trans)
+    {
+        Transform[] transforms = trans.GetComponentsInChildren<Transform>();
+
+        foreach(Transform t in transforms)
+        {
+            if(t.name == "PartsScenePos")
+            {
+                trans.position = t.localPosition;
+                break;
+            }
+        }
     }
 
     private bool CheckIsEmpty()

@@ -48,4 +48,19 @@ public class ProjectManager : MonoBehaviour
 
         return ObjectPoolType.None;
     }
+
+    public Vector3 CalculateCenterPos(JsonBase jsonBase)
+    {
+        Vector3 centerPos = Vector3.zero;
+        int trackCount = jsonBase.trackData.Length;
+
+        foreach(TrackData data in jsonBase.trackData)
+        {
+            centerPos += data.position;
+        }
+
+        centerPos /= trackCount;
+
+        return centerPos;
+    }
 }

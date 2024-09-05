@@ -12,21 +12,18 @@ public class CamManager : MonoBehaviour
 
     [SerializeField] private float _changeScreenScaleSpeed;
 
-    private float[] _minDistanceFromCamera = new float[3];
-    private float[] _maxDistanceFromCamera = new float[3];
-    private float[] _curDistanceFromCamera = new float[3];
+    private float _minDistanceFromCamera;
+    private float _maxDistanceFromCamera;
+    private float _curDistanceFromCamera;
 
     private void Start()
     {
         _toggle.isOn = false;
 
-        for(int i = 0; i < 3; i++)
-        {
-            _minDistanceFromCamera[i] = _cm.m_Orbits[i].m_Radius;
-            _maxDistanceFromCamera[i] = _minDistanceFromCamera[i] + 15f;
-            _cm.m_Orbits[i].m_Radius = _maxDistanceFromCamera[i];
-            _curDistanceFromCamera[i] = _cm.m_Orbits[i].m_Radius;
-        }
+        _minDistanceFromCamera = _cm.m_Orbits[1].m_Radius;
+        _maxDistanceFromCamera = _minDistanceFromCamera + 15f;
+        _cm.m_Orbits[1].m_Radius = _maxDistanceFromCamera;
+        _curDistanceFromCamera = _cm.m_Orbits[1].m_Radius;
     }
 
     private void Update()
@@ -56,13 +53,10 @@ public class CamManager : MonoBehaviour
 
         if (scrollInput != 0.0f)
         {
-            for (int i = 0; i < 3; i++)
-            {
-                float newFieldOfView = _cm.m_Orbits[i].m_Radius + scrollInput * _changeScreenScaleSpeed;
-                _curDistanceFromCamera[i] = newFieldOfView;
-                _curDistanceFromCamera[i] = Mathf.Clamp(_curDistanceFromCamera[i], _minDistanceFromCamera[i], _maxDistanceFromCamera[i]);
-                _cm.m_Orbits[i].m_Radius = Mathf.Clamp(_curDistanceFromCamera[i], _minDistanceFromCamera[i], _maxDistanceFromCamera[i]);
-            }
+            float newFieldOfView = _cm.m_Orbits[1].m_Radius + scrollInput * _changeScreenScaleSpeed;
+            _curDistanceFromCamera = newFieldOfView;
+            _curDistanceFromCamera = Mathf.Clamp(_curDistanceFromCamera, _minDistanceFromCamera, _maxDistanceFromCamera);
+            _cm.m_Orbits[1].m_Radius = Mathf.Clamp(_curDistanceFromCamera, _minDistanceFromCamera, _maxDistanceFromCamera);
         }
 
         if (Input.touchCount >= 2)
@@ -77,14 +71,11 @@ public class CamManager : MonoBehaviour
 
             float deltaMagnitudeDiff = prevTouchDeltaMag - touchDeltaMag;
 
-            for (int i = 0; i < 3; i++)
-            {
-                _cm.m_Orbits[i].m_Radius += deltaMagnitudeDiff * (_changeScreenScaleSpeed / 10);
-                _curDistanceFromCamera[i] += deltaMagnitudeDiff * (_changeScreenScaleSpeed / 10);
+            _cm.m_Orbits[1].m_Radius += deltaMagnitudeDiff * (_changeScreenScaleSpeed / 10);
+            _curDistanceFromCamera += deltaMagnitudeDiff * (_changeScreenScaleSpeed / 10);
 
-                _curDistanceFromCamera[i] = Mathf.Clamp(_curDistanceFromCamera[i], _minDistanceFromCamera[i], _maxDistanceFromCamera[i]);
-                _cm.m_Orbits[i].m_Radius = Mathf.Clamp(_cm.m_Orbits[i].m_Radius, _minDistanceFromCamera[i], _maxDistanceFromCamera[i]);
-            }
+            _curDistanceFromCamera = Mathf.Clamp(_curDistanceFromCamera, _minDistanceFromCamera, _maxDistanceFromCamera);
+            _cm.m_Orbits[1].m_Radius = Mathf.Clamp(_cm.m_Orbits[1].m_Radius, _minDistanceFromCamera, _maxDistanceFromCamera);
 
         }
     }

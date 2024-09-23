@@ -26,6 +26,12 @@ public class CamManager : MonoBehaviour
         _curDistanceFromCamera = _cm.m_Orbits[1].m_Radius;
     }
 
+    public void CamPointOfView(Transform trans)
+    {
+        _cm.LookAt = trans;
+        _cm.Follow = trans;
+    }
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))

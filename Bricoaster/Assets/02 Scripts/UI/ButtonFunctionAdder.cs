@@ -73,7 +73,7 @@ public class ButtonFunctionAdder : MonoBehaviour
         foreach (TrackData data in jsonBase.trackData)
         {
             GameObject track = ObjectPool.Instance.GetObject(ProjectManager.Instance.FindType(data.name), _makeTrans);
-            yield return new WaitForSeconds(0.2f);
+            yield return new WaitForSeconds(0.15f);
             //_camMgr.CamPointOfView(track.transform);
             track.transform.position = data.position - plusPos;
             if (ProjectManager.Instance.NameChange(track.name) == "Lego_2x1" && Mathf.Abs(data.rotation.y) == 90)
@@ -85,9 +85,7 @@ public class ButtonFunctionAdder : MonoBehaviour
                 track.transform.rotation = Quaternion.Euler(data.rotation);
             }
             yield return new WaitUntil(() => ChangeColor(track, data.color));
-            Debug.Log("dd");
-            // 가끔 안나오는 버그 뭐임?
-            // 그리고 그림자 지는거 없애는 방법을 찾자
+            Debug.Log($"{track.name}");
         }
 
         _isMaking = false;

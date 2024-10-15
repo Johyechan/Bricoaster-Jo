@@ -6,6 +6,8 @@ public class TrashCanButton : ButtonBase
 {
     [SerializeField] Transform _makeTrans;
 
+    [SerializeField] GuideManager _guideManager;
+
     private ButtonFunctionAdder _adder;
 
     private int _cnt;
@@ -19,6 +21,7 @@ public class TrashCanButton : ButtonBase
     {
         if(!_adder.IsMaking)
         {
+            _guideManager.IsReset = true;
             _cnt = _makeTrans.childCount;
             for (int i = _cnt - 1; i >= 0; i--)
             {

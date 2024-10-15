@@ -9,7 +9,7 @@ public class ButtonFunctionAdder : MonoBehaviour
 
     [SerializeField] private Transform _makeTrans;
 
-    [SerializeField] private CamManager _camMgr;
+    private GuideManager _guideManager;
 
     private Arrangements _arr;
 
@@ -24,6 +24,7 @@ public class ButtonFunctionAdder : MonoBehaviour
 
     void Start()
     {
+        _guideManager = GameObject.Find("GuideManager").GetComponent<GuideManager>();
         _arr = GameObject.Find("Arrangements").GetComponent<Arrangements>();
         _isMaking = false;
     }
@@ -69,13 +70,12 @@ public class ButtonFunctionAdder : MonoBehaviour
 
     private IEnumerator MakeTrackCo(JsonBase jsonBase)
     {
-        Vector3 plusPos = ProjectManager.Instance.CalculateCenterPos(jsonBase);
+        Vector3 minPos = ProjectManager.Instance.CalculateCenterPos(jsonBase);
         foreach (TrackData data in jsonBase.trackData)
         {
             GameObject track = ObjectPool.Instance.GetObject(ProjectManager.Instance.FindType(data.name), _makeTrans);
             yield return new WaitForSeconds(0.15f);
-            //_camMgr.CamPointOfView(track.transform);
-            track.transform.position = data.position - plusPos;
+            track.transform.position = data.position - minPos;
             if (ProjectManager.Instance.NameChange(track.name) == "Lego_2x1" && Mathf.Abs(data.rotation.y) == 90)
             {
                 track.transform.rotation = Quaternion.Euler(new Vector3(0, -90, 0));
@@ -85,10 +85,10 @@ public class ButtonFunctionAdder : MonoBehaviour
                 track.transform.rotation = Quaternion.Euler(data.rotation);
             }
             yield return new WaitUntil(() => ChangeColor(track, data.color));
-            Debug.Log($"{track.name}");
         }
 
         _isMaking = false;
+        _guideManager.IsCanChangeOrder = true;
     }
 
     private bool ChangeColor(GameObject obj, Color color)

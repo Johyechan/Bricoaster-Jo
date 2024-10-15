@@ -83,14 +83,20 @@ public class ObjectPool : MonoBehaviour
         if(_pool[type].Count > 0)
         {
             var obj = _pool[type].Dequeue();
-            obj.transform.SetParent(trans);
+            if(trans != null)
+            {
+                obj.transform.SetParent(trans);
+            }
             obj.SetActive(true);
             return obj;
         }
         else
         {
             var obj = CreateNewObject(type);
-            obj.transform.SetParent(trans);
+            if(trans != null)
+            {
+                obj.transform.SetParent(trans);
+            }
             obj.SetActive(true);
             return obj;
         }
